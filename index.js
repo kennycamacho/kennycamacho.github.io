@@ -1,45 +1,73 @@
-const display = document.getElementById("display");
-let timer = null;
-let startTime = 0;
-let elapsedTime = 0;
-let isRunning = false;
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+const menuBtnIcon = menuBtn.querySelector("i");
 
-function start() {
-  if (!isRunning) {
-    startTime = Date.now() - elapsedTime;
-    timer = setInterval(update, 10);
-    isRunning = true;
-  }
-}
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
 
-function stop() {
-  if (isRunning) {
-    clearInterval(timer);
-    elapsedTime = Date.now() - startTime;
-    isRunning = false;
-  }
-}
-function reset() {
-  clearInterval(timer);
-  startTime = 0;
-  elapsedTime = 0;
-  isRunning = false;
-  display.textContent = "00:00:00:00";
-}
+  const isOpen = navLinks.classList.contains("open");
+  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+});
 
-function update() {
-  const currentTime = Date.now();
-  elapsedTime = currentTime - startTime;
+navLinks.addEventListener("click", () => {
+  navLinks.classList.remove("open");
+  menuBtnIcon.setAttribute("class", "ri-menu-line");
+});
 
-  let hours = Math.floor(elapsedTime / (1000 * 60 * 60));
-  let minutes = Math.floor((elapsedTime / (1000 * 60)) % 60);
-  let seconds = Math.floor((elapsedTime / 1000) % 60);
-  let milliseconds = Math.floor((elapsedTime % 1000) / 10);
+const scrollRevealOption = {
+  distance: "50px",
+  origin: "bottom",
+  duration: 1000,
+};
+//   header container
+ScrollReveal().reveal(".header__container p", {
+  ...scrollRevealOption,
+});
+ScrollReveal().reveal(".header__container h1", {
+  ...scrollRevealOption,
+  delay: 500,
+});
 
-  hours = String(hours).padStart(2, "0");
-  minutes = String(minutes).padStart(2, "0");
-  seconds = String(seconds).padStart(2, "0");
-  milliseconds = String(milliseconds).padStart(2, "0");
+// --------- ABOUT CONTAINER -----------
 
-  display.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`;
-}
+ScrollReveal().reveal(".about__image img", {
+  ...scrollRevealOption,
+  origin: "left",
+});
+
+ScrollReveal().reveal(".about__content .section__subheader", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+
+ScrollReveal().reveal(".about__content .section__header", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+
+ScrollReveal().reveal(".about__content .section__subheader", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
+ScrollReveal().reveal(".about__content .section__description", {
+  ...scrollRevealOption,
+  delay: 2000,
+});
+ScrollReveal().reveal(".about__btn", {
+  ...scrollRevealOption,
+  delay: 2500,
+});
+// ----------- ROOM CONTAINER -----------------
+
+ScrollReveal().reveal(".room__card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+// ----------- SERVICE CONTAINER -----------------
+
+ScrollReveal().reveal(".service__list li", {
+  ...scrollRevealOption,
+  interval: 500,
+  origin: "right",
+});
