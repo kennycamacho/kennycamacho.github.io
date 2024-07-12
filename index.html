@@ -1,280 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Web Design Mastery | Royal Park</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav>
-        <div class="nav_bar">
-          <div class="logo">
-            <a href="#"
-              ><img src="RayalPark_25-12-23-main/assets/logo.png" alt="logo"
-            /></a>
-          </div>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <link rel="stylesheet" href="KCamacho.css">
+   <title>Kenny Camacho</title>
+</head>
+<body>
+   <!-- NavBar-->
+   <nav class="navbar">
+      <h1 class="logo">KENNETH CAMACHO</h1>
+      <ul class="nav-links">
+         <li class="active"><a href="#">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#games">Games</a></li>
+         <li class="ctn"><a href="#" id="#contact">Contact</a></li>
+      </ul>
+      <img src="img/menu-btn.png" alt="" class="menu-btn" alt="menu-btn" />
+   </nav>
 
-          <div class="nav__menu__btn" id="menu-btn">
-            <i class="ri-menu-line"></i>
-          </div>
-        </div>
-        <ul class="nav__links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#explore">Explore</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="btn nav__btn">Book Now</button>
-      </nav>
-      <div class="section__container header__container" id="home">
-        <p>Simple - Unique - friendly</p>
-        <h1>Make Yourself At Home<br />In Our <span>Hotel</span>.</h1>
+   <header>
+      <div class="header-content">
+         <h2>Junoir Web Developer</h2>
+         <div class="line"></div>
+         <div class=""></div>
+         <h1>HTML&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;JavaScript</h1>
+         <img src="img/html5-logo.png">
       </div>
-    </header>
+   </header>
 
-    <section class="section__container booking__container">
-      <form action="/" class="booking__form">
-        <div class="input__group">
-          <span><i class="ri-calendar-2-fill"></i></span>
-          <div>
-            <label for="check-in">CHECK IN</label>
-            <input type="text" placeholder="Check In" />
-          </div>
-        </div>
+<div class="cover-letter" id="about">
+   <div class="title">
+      <h1>About Me</h1>
+      <div class="line"></div>
+      <p id="p1">
+            Since I was a child I have always had an interest in computers, 
+         using them as always come easy and have had an natural intuition about them. 
+         I was the kid on the block who used to fix everyones computers. 
+         Web development or programming was never something i dabbled in until I 
+         attended my first year at George Brown for their Computer Repair Technican course. 
+         My goal at that time was to work as a network administrator but after the first week of 
+         classes I became hooked on web development.
+      </p>
 
-        <div class="input__group">
-          <span><i class="ri-calendar-2-fill"></i></span>
-          <div>
-            <label for="check-in">CHECK OUT</label>
-            <input type="text" placeholder="Check Out" />
-          </div>
-        </div>
+      <p id="p2">
+            The instant gratification after a save and refresh had me hooked and the ability to google 
+         any question and have 5 different answers that all work I was a full blown addict. 
+         I am still a beginner but with the endless coding languages, frameworks, web available 
+         and always advancing I know that I will never stop learning, advancing and gaining capabilities 
+         as long as i'm alive.
+      </p>
 
-        <div class="input__group">
-          <span><i class="ri-user-fill"></i></span>
-          <div>
-            <label for="guest">GUESTS</label>
-            <input type="text" placeholder="Guests" />
-          </div>
-        </div>
-        <div class="input__group input__btn">
-          <button class="btn">CHECK OUT</button>
-        </div>
+       <p id="p3">
+            I believe I'll be an asset to your company inspite of my lack of experience because of my ability 
+         for problem solving and obsessive nature to produce only the highest quality ****** and to never 
+         leave anything unfinished. I hope after reviewing my website and all its features i will be clear the potential 
+         and tenacious drive that I have amd will bring to the office every day through my attitude and work. I'm eager to 
+         bring my skills and enthosiasm to your team. Please contact me to arrange an interview at your earliest convenience.
+      </p>
+   </div>
+   <div class="line"></div>
+   <div class="games" id="games">
+      <h1>JavaScript Games</h1>
+      <div class="games-header">
+         <canvas id="board"></canvas>
+      </div>
+   </div>
+   <div class="line"></div>
+</div>
+   <div class="weather">
+      <form class="weatherForm">
+         <input type="text" class="cityInput" placeholder="Enter City" />
+         <button type="submit">Get Weather</button>
       </form>
-    </section>
+      <div class="line"></div>
+   <div class="card"></div>
+</div>
 
-    <section class="section__container about__container" id="about">
-      <div class="about__image">
-        <img src="RayalPark_25-12-23-main/assets/about.jpg" alt="About" />
-      </div>
-      <div class="about__content">
-        <p class="section__subheader">About Us</p>
-        <h2 class="section__header">The Best Holidays Start Here!</h2>
-        <p class="section__description">
-          With a focus on quality accommodations, personalized experiences, and
-          seamless booking, our platform is dedicated to ensuring that every
-          traveler embarks on their dream holiday with confidence and
-          excitement.
-        </p>
-        <div class="about__btn">
-          <button class="btn">Read More</button>
-        </div>
-      </div>
-    </section>
 
-    <section class="section__container room__container">
-      <p class="section__subheader">OUR LIVING ROOM</p>
-      <h2 class="section__header">The Most Memorable Rest Time Starts Here.</h2>
-      <div class="room__grid">
-        <div class="room__card">
-          <div class="room__card_image">
-            <img src="RayalPark_25-12-23-main/assets/room-1.jpg" alt="room" />
-            <div class="room__card__icons">
-              <span><i class="ri-heart-fill"></i></span>
-              <span><i class="ri-paint-fill"></i></span>
-              <span><i class="ri-shield-star-line"></i></span>
-            </div>
-          </div>
-          <div class="room__card__details">
-            <h4>Deluxe Ocean View</h4>
-            <p>Bask in luxury with breathtaking view from your suite.</p>
-            <h5>Starting from <span>$299/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card_image">
-            <img src="RayalPark_25-12-23-main/assets/room-2.jpg" alt="room" />
-            <div class="room__card__icons">
-              <span><i class="ri-heart-fill"></i></span>
-              <span><i class="ri-paint-fill"></i></span>
-              <span><i class="ri-shield-star-line"></i></span>
-            </div>
-          </div>
-          <div class="room__card__details">
-            <h4>Executive Cityscape Room</h4>
-            <p>Experience urban elegance and modern comfort in t city.</p>
-            <h5>Starting from <span>$199/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card_image">
-            <img src="RayalPark_25-12-23-main/assets/room-3.jpg" alt="room" />
-            <div class="room__card__icons">
-              <span><i class="ri-heart-fill"></i></span>
-              <span><i class="ri-paint-fill"></i></span>
-              <span><i class="ri-shield-star-line"></i></span>
-            </div>
-          </div>
-          <div class="room__card__details">
-            <h4>Family Garden Retreat</h4>
-            <p>
-              Spacious and inviting, perfect for creating cherished memories
-              with loved ones.
-            </p>
-            <h5>Starting from <span>$249/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="service" id="service">
-      <div class="section__container service__container">
-        <div class="service__content">
-          <p class="section__subheader">SERVICES</p>
-          <h2 class="section__header">Strive only for the Best.</h2>
-          <ul class="service__list">
-            <li>
-              <span><i class="ri-shield-star-line"></i></span>
-              High Class Security
-            </li>
-            <li>
-              <span><i class="ri-24-hours-line"></i></span>
-              24-Hour Room Service
-            </li>
-            <li>
-              <span><i class="ri-customer-service-line"></i></span>
-              Conference Room
-            </li>
-            <li>
-              <span><i class="ri-map-2-line"></i></span>
-              Tourist Guide Support
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<div class="contact" id="contact">
+   <form action="contact.php" method="POST" id="message-form">
+   
+      <label for="name">Name</label> <br>
+      <input type="text" id="name" placeholder="Your name"><br><br>
+   
+      <label for="name">Email</label><br>
+      <input type="email" placeholder="email.example.com" name="email" id="email"> <br><br>
 
-    <section class="section__container banner__container">
-      <div class="banner__content">
-        <div class="banner_card">
-          <h4>25+</h4>
-          <p>Properties Available</p>
-        </div>
-        <div class="banner_card">
-          <h4>350+</h4>
-          <p>Bookings Completed</p>
-        </div>
-        <div class="banner_card">
-          <h4>600+</h4>
-          <p>Happy Customers</p>
-        </div>
-      </div>
-    </section>
-    <secton class="explore" id="explore">
-      <p class="section__subheader">EXPLORE</p>
-      <h2 class="section__header">What's New Today.</h2>
-      <div class="explore__bg">
-        <div class="explore__content">
-          <p class="section__description">10th MAR 2023</p>
-          <h4>A New Menu Is Available In Our Hotel</h4>
-          <button class="btn">Continue</button>
-        </div>
-      </div>
-    </secton>
+      <label for="name">Message</label><br>
+      <textarea placeholder="Your message" name="message" id="message"></textarea><br><br>
+      <button type="submit" value="submit" id="message-submit-btn">Send</button>
+   </form>
+</div>
 
-    <footer class="footer" id="footer">
-      <div class="section__container footer__container">
-        <div class="foot__col">
-          <div class="logo">
-            <a href="#home"
-              ><img src="RayalPark_25-12-23-main/assets/logo.png" alt="logo"
-            /></a>
-          </div>
-          <p class="section__description">
-            Discover a world of comfort, luxury, and adventure as you explore
-            our curated selection of hotels, making every moment of your getaway
-            truly extraordinary.
-          </p>
-          <button class="btn">Book Now</button>
-        </div>
-        <div class="footer__col">
-          <h4>QUICK LINKS</h4>
-          <ul class="footer__links">
-            <li><a href="#">Browse Destinations</a></li>
-            <li><a href="#">Special Offers & Packages</a></li>
-            <li><a href="#">Room Types & Amenities</a></li>
-            <li><a href="#">Customer Reviews & Ratings</a></li>
-            <li><a href="#">Travel Tips & Guides</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>OUR SERVICES</h4>
-          <ul class="footer__links">
-            <li><a href="#">Concierge Assistance</a></li>
-            <li><a href="#">Flexible Booking Options</a></li>
-            <li><a href="#">Airport Transfers</a></li>
-            <li><a href="#">Wellness & Recreation</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>CONTACT US</h4>
-          <ul class="footer__links">
-            <li><a href="#">rayalpark@info.com</a></li>
-          </ul>
-          <div class="footer__socials">
-            <a href="#"
-              ><img
-                src="RayalPark_25-12-23-main/assets/facebook.png"
-                alt="Facebook"
-            /></a>
-            <a href="#"
-              ><img
-                src="RayalPark_25-12-23-main/assets/instagram.png"
-                alt="Instagram"
-            /></a>
-            <a href="#"
-              ><img
-                src="RayalPark_25-12-23-main/assets/youtube.png"
-                alt="Youtube"
-            /></a>
-            <a href="#"
-              ><img
-                src="RayalPark_25-12-23-main/assets/twitter.png"
-                alt="Twitter"
-            /></a>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bar">
-        Copyright © 2023 Web Design Mastery. All rights reserved.
-      </div>
-    </footer>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="index.js"></script>
-  </body>
+<section class="footer">
+   <p>
+     210 Main St. W, N0J1R0, Otterville, Ontario, Canada |
+     Phone:(289)823-3547 | kenny.camacho@gmail.com
+   </p>
+   <p>Copyright © 2022</p>
+ </section>
+
+   <script src="breakout.js"></script>
+   <script src="KCamacho.js"></script>
+   <script src="weather.js"></script>
+   <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+   
+</body>
 </html>
