@@ -1,6 +1,14 @@
 const canvas = document.getElementById('game');
 const context = canvas.getContext('2d');
+document.addEventListener("touchmove", touchMoveHandler, false);
 
+function touchMoveHandler(event) { 
+   var relativeX = event.touches[0].clientX - canvas.getBoundingClientRect().left;
+  var relativeX = event.touches[0].clientX - canvas.offsetLeft;
+  if(relativeX > 0 && relativeX < canvas.width) {
+    paddleX = relativeX - paddleWidth/2;
+  }
+}
 // each row is 14 bricks long. the level consists of 6 blank rows then 8 rows
 // of 4 colors: red, orange, green, and yellow
 const level1 = [
